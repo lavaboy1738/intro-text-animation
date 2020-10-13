@@ -4,6 +4,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .header-wrapper{
@@ -21,7 +22,6 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 12vh;
-    z-index: -1;
 }
 
 .container {
@@ -35,9 +35,11 @@ body {
     justify-content: center;
     align-items: center;
     background: rgb(232,183, 208);
-    animation: slide-out-container 4s cubic-bezier(0.97, 0.01, 0.36, 0.99) 2.8s;
+    animation: slide-out-container 3s cubic-bezier(0.97, 0.01, 0.36, 0.99) 2.8s;
     animation-fill-mode: forwards;
+    overflow: hidden;
 }
+
 
 .text-wrapper {
     color: white;
@@ -187,10 +189,14 @@ body {
 
 @media (max-width: 990px) {
     .header {
-        font-size: 24px;
+        font-size: 8vh;
     }
 
     .text {
-        font-size: 24px;
+        font-size: 8vh;
+    }
+
+    body{
+        height: 88vh;
     }
 }
